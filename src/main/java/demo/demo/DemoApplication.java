@@ -4,6 +4,8 @@ import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.ConfigurableApplicationContext;
 
+import demo.demo.dependency_injection.Customers;
+
 @SpringBootApplication
 public class DemoApplication {
 
@@ -11,6 +13,7 @@ public class DemoApplication {
 		ConfigurableApplicationContext context = SpringApplication.run(DemoApplication.class, args);
 		Customers c = context.getBean(Customers.class);
 		c.display();
+
 	}
 
 }
